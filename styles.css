@@ -1,0 +1,202 @@
+/* CSS property for layout */ 
+
+.container{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+.header { 
+    background-color: red; 
+    padding: 15px; 
+    text-align: center;
+    }
+.header h1{
+    
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px black;
+}
+.content-background{ 
+
+    background-image: url("Images/sample.jpg");
+    background-position: center;
+    background-size: 100%;    
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+.content-background-winery{
+  background-image: url("Images/red-wine.jpg");
+  background-position: center;
+  background-size: 100%;    
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+}
+.content-background-dining{
+  background-image: url("Images/dining.jpg");
+  background-position: center;
+  background-size: 100%;    
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+}
+.content-background-takeout{
+  background-image: url("Images/takeout-italian.jpeg");
+  background-position: center;
+  background-size: 100%;    
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+}
+h3{
+    
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px black;
+}
+.transbox {
+    margin: 30px;
+    background-color: white;
+    border: 1px solid black;
+    opacity: 0.8;
+    padding: 15px;
+  }
+  
+  .transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+  }
+.footer { 
+    background-color: green; 
+    padding: 5px; 
+    text-align: center; 
+}
+ 
+/* CSS property for nevigation menu */ 
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+}
+
+li {
+float: left;
+}
+
+li a, .dropbtn {
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+background-color: rgb(190, 250, 190);
+}
+
+li.dropdown {
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.logo{
+  position: absolute;
+  float: left;
+  top: 25px;
+}
+.map-bg {    
+    background: url("images/gordontown.png") no-repeat;
+    background-position: 0px 0px;
+    background-size: auto;
+    width: 100%;
+    height: 440px; /*adjust to the height of your image*/
+    position: relative;
+}
+
+.marker {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 130px; /*positions our marker*/
+    left: 200px; /*positions our marker*/
+    display: block;  
+}
+
+.pin {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 38px;
+    left: 38px;
+    background: rgba(5, 124, 255, 1);    
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.pin-effect {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    display: block;
+    background: rgba(5, 124, 255, 0.6);
+    border-radius: 50%;
+    opacity: 0;
+    animation: pulsate 2400ms ease-out infinite;
+}
+@keyframes pulsate {
+    0% {
+    transform: scale(0.1);
+    opacity: 0;
+    }
+    50% {
+    opacity: 1;
+    }
+    100% {
+    transform: scale(1.2);
+    opacity: 0;
+    }
+}
+/* Create three equal columns that floats next to each other */
+.column {
+    float: right;
+    width: 30%;
+    padding: 15px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
