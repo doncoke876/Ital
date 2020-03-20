@@ -182,7 +182,7 @@ display: block;
 }
 /* Create three equal columns that floats next to each other */
 .column {
-    float: right;
+    float: left;
     width: 30%;
     padding: 15px;
   }
