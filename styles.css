@@ -63,6 +63,10 @@ h3{
     font-weight: bold;
     color: #000000;
   }
+  .transbox img{
+    height: 100px;
+    width: 150px;
+  }
 .footer { 
     background-color: green; 
     padding: 5px; 
