@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Angelou's Italian Cuisine</title>
+    <title>Contact Us - Angelou's Italian Cuisine</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
 
@@ -36,12 +36,32 @@
         <li><a href="explore.html">Explore</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="login.html">Login</a></li>
 
       </ul> 
 </div><br> 
-<div class="transbox">
+<div class= "transbox">
     <h1>Contact Us</h1>
+    <form action = "sub.rec.html">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+<br\> <br\>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <br\>
+    <label for="Selection">Reason for Contact</label>
+    <select id="selection" name="selection">
+      <option value="blank">Not Applicable</option>
+      <option value="reset password">Reset Password</option>
+      <option value="query">Query</option>
+      <option value="complaint">Complaint</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+    </form>
     <p>To contact us:<br/>
       1-876-977-1701-2 (Italian Restaurant)<br/>
       FB, IG & Twitter: Angelou’s Ristorante<br/>
