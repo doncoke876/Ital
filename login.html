@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN - Angelou's Italian Cuisine</title>
+    <title>Login - Angelou's Italian Cuisine</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head> 
 
@@ -16,7 +16,7 @@
     <h1 style = "color:white;font-size:200%;"> 
         Angelou's Italian Cuisine 
     </h1> 
-<div class = "logo"> <img src="Images/logodraft.png" alt="logo" height="70px" width="70px"></div>
+<div class = "logo"> <a href="index.html"> <img src="Images/logodraft.png" alt="logo" height="70px" width="70px"></a></div>
 </div> 
   
 <!-- nevigation menu for website layout -->
@@ -29,18 +29,35 @@
         <div class="dropdown-content">
           <a href="dining.html">Dining</a>
           <a href="winery.html">Winery</a>
-          <a href="takeout.html">Take Out</a>
+          <a href="takeout.html">Take Out</a> 
+
         </div>
       </li>
       <li><a href="explore.html">Explore</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a href="about.html">About</a></li>
     </ul> 
-</div><br>
-<div class="content-background">
-<div class="transbox">  
-   
-  
+        </div>
+<div>
+  <h2>Sign In</h2>
+  <p><b>Its quick and easy.</b></p>
+
+  <div class= "container-form">
+    
+<form action= "confirm-reg.html">
+
+<label for="email"><b>Email Address</b></label> 
+<input type="text" placeholder="Email Address" required>
+
+<label for="psw"><b>Password</b></label>
+<input type="password" placeholder="Enter Password" name="psw" required>
+
+<label for="psw-repeat"><b>Repeat Password</b></label>
+<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+<input type="submit" name="submit">
+</form>
+</div>
       </div>
 </div>
 <div class="footer">
